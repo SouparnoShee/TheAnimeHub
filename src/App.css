@@ -1,38 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+  background-color: rgb(255, 0, 98);
+  color: white;
+  background-color: #212529;
+}
+
+.hub {
+  color: aquamarine;
+  font-size: 30px;
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+.thehead {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 80px;
+
+}
+
+.TheSearch {
+  height: 50px;
+  width: 500px;
+  border: 3px solid #000;
+  margin: 5px 10px;
+}
+
+.TheButton {
+  height: 47px;
+  padding: 8px 20px;
+  font-size: 18px;
+  background-color: aquamarine;
+  font-family: 'Acme', sans-serif;
+  cursor: pointer;
+
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* width: 100vh; */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  font-family: 'Acme', sans-serif;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.Body {
+  margin-top: 40px;
+  width: 900px;
+  max-height: 1000px;
+  padding: 40px 40px;
+  background-color: aquamarine;
+  box-shadow: 4px 4px 7px rgb(0, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.theTitle {
+  font-size: 30px;
+  /* color: #000; */
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background: #000;
+}
+
+.genre {
+  font-size: 20px;
+  /* color: #000; */
+}
+
+.imggg {
+  border-radius: 12px;
+  max-width: 350px;
+}
+
+span {
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.Body a {
+  text-decoration: none;
+  color: #000;
+  padding: 2px 8px;
+  border: 2px solid #000;
+  font-size: 30px;
+  margin: 60px;
+}
+
+.Body a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+.homebody {
+  height: 100vh;
+  width: 100%;
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heading {
+  height: 100vh;
+  font-family: 'Acme', sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 80px;
+}
+
+.letsSearch {
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  padding: 8px 15px;
+  margin-top: 20px;
+  border: 1px solid white;
+  font-size: 20px;
+  background-color: aquamarine;
+}
+
+.letsSearch:hover {
+  color: #fff;
+  border: 1px solid white;
+  background-color: transparent;
+
+}
+
+.RightImage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.RightImage img {
+  height: 500px;
+  box-shadow: 4px 4px 8px #000;
+}
+
+@media (max-width:1196px) {
+  .homebody {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .RightImage img {
+    height: 400px;
+  }
+
+  .heading {
+    align-items: center;
+  }
+  .Body {
+    margin-top: 40px;
+    width: 500px;
+    max-height: 1500px;
+  }
+}
+
+@media (max-width:500px) {
+  .RightImage img {
+    height: 300px;
+  }
+
+  .heading h1 {
+    font-size: 45px;
+  }
+
+  .heading h3 {
+    font-size: 18px;
+  }
+
+  .letsSearch {
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-top: 20px;
+    border: 1px solid white;
+    font-size: 12px;
+    background-color: aquamarine;
+  }
+  .Body {
+    margin-top: 40px;
+    width: 400px;
+    max-height: 1800px;
+  }
+  .TheSearch {
+    height: 50px;
+    width: 300px;
+  }
+}
+
+@media (max-width:400px){
+  .Body {
+    margin-top: 40px;
+    width: 300px;
+    max-height: 1900px;
   }
 }
